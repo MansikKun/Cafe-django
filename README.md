@@ -14,7 +14,7 @@
 ---
 - Customer ID           /PK
 - Name                  /str
-- PhoneNumber           /int
+- PhoneNumber           /str
 
 ### Order
 ---
