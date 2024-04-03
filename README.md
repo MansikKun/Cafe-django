@@ -13,7 +13,7 @@
 ### Customer
 ---
 - Customer ID           /PK
-- Name                  /char
+- Name                  /str
 - PhoneNumber           /int
 
 ### Order
@@ -28,7 +28,7 @@
 - Menu ID               /PK
 - Category ID <-Category/FK
 - Quantity              /int
-- Name                  /char
+- Name                  /str
 - Price                 /int
 
 ### OrderMenu(연결 테이블)
@@ -42,7 +42,7 @@
 ### Category
 ---
 - Category ID           /PK
-- Name                  /char
+- Name                  /str
 
 ### Logs
 ---
