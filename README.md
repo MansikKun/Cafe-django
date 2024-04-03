@@ -1,5 +1,5 @@
 # django 를 이용한 카페 키오스크 프로그램만들기.
-## django 를 이용하여 간단한 미니 키오스크 구현 
+
 ### DB(menu,customer,order,kategorie,Logs)
 ---
 - **customer/order**:(1:N)
