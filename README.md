@@ -9,6 +9,7 @@
 ### 관계도
 ---
 
+## Table
 ### Customer
 ---
 - Customer ID           /PK
