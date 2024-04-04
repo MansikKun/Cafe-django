@@ -8,7 +8,7 @@
 - **Logs**:별도 시스템에서 발생하는 다양한 이벤트를 기록
 ### 관계도
 ---
-![alt text](image.png) 
+![alt text](image.png)
 
 ## Table
 ### Customer
