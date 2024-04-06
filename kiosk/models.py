@@ -14,7 +14,7 @@ class Order(models.Model):
     order_date = models.DateTimeField(verbose_name="order date")
     total_price = models.IntegerField()
     def __str__(self):
-        return self.total_price
+        return str(self.total_price)
 #Category
 class Category(models.Model):
     category_name = models.CharField(max_length=200)
@@ -37,5 +37,5 @@ class OrderMenu(models.Model):
     order_quantity = models.IntegerField()
     items_price = models.IntegerField()
     def __str__(self):
-        return self.order_quantity
+        return str(self.order_quantity)
 

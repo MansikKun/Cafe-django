@@ -15,7 +15,6 @@ class OrderAdmin(admin.ModelAdmin):
 @admin.register(Menu)
 class OrderAdmin(admin.ModelAdmin):
     list_display=('id','menu_name','category','price','description','quantity')
-
 @admin.register(OrderMenu)
 class OrderAdmin(admin.ModelAdmin):
     list_display=('id','order','menu','order_quantity')

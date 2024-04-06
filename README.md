@@ -51,5 +51,3 @@
 - Type                  /str
 - Timestamp             /dateTime
 
-## 2024 04 03
--

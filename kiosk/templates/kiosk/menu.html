@@ -1,9 +1,24 @@
 {{category}}
-<h1>잘 오나??</h1>
+
 {% for category in category %}
     <h3>카테고리 : {{category.category_name}}</h3>
-    {% for menu  in category.menus.all %}
-     음료이름 : {{menu.menu_name}}   가격 : {{menu.price}}
-     <br>
+    {% for menu in category.menus.all %}
+        <p>음료이름 : {{menu.menu_name}}   가격 : {{menu.price}}</p>
+            <form action="{% url 'kiosk:add_ordermenu' menu.id %}" method="post">  <!-- menu.id를 URL에 추가하여 전달 -->
+            {% csrf_token %}
+            <button type="submit">+</button>
+            </form>
+            {% for order_menu in menu.menu_orders.all %}
+            <form action="{% url 'kiosk:remove_ordermenu' menu.id %}" method="post">
+                {% csrf_token %}
+                <button type="submit">-</button>
+                </form>    
+            <p>주문 수량: {{ order_menu.order_quantity }} 현재가격: {{ order_menu.items_price }}</p>
+               
+            {% endfor %}
+        
+        
+        <br>
     {% endfor %}
 {% endfor %}
+
