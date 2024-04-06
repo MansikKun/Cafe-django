@@ -1,0 +1,9 @@
+{{category}}
+<h1>잘 오나??</h1>
+{% for category in category %}
+    <h3>카테고리 : {{category.category_name}}</h3>
+    {% for menu  in category.menus.all %}
+     음료이름 : {{menu.menu_name}}   가격 : {{menu.price}}
+     <br>
+    {% endfor %}
+{% endfor %}

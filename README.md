@@ -37,7 +37,7 @@
 - OrderMenu ID          /PK
 - Order ID <-Order      /FK
 - Menu ID <-Menu        /FK
-- Quantity              /int
+- Order_Quantity        /int
 - ItemsPrice            /int
 
 ### Category
