@@ -51,3 +51,11 @@
 - Type                  /str
 - Timestamp             /dateTime
 
+## 2024 04 03
+-
+## 2024 04 06
+### 고쳐야할것
+---
+1 menu Quantity 값이 0일때 더이상 선택을 할 수없게 바꾸기
+2 결제 버튼 만들고 누르면 order.html 로 넘어가게/order.html 페이지 구성하기
+3 페이지 꾸미기 
