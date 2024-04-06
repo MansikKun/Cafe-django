@@ -13,7 +13,7 @@
                 {% csrf_token %}
                 <button type="submit">-</button>
                 </form>    
-            <p>주문 수량: {{ order_menu.order_quantity }} 현재가격: {{ order_menu.items_price }}</p>
+            <p>주문 수량: {{ order_menu.order_quantity }} : {{ order_menu.items_price }}</p>
                
             {% endfor %}
         
